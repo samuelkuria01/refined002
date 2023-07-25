@@ -1,0 +1,16 @@
+current directory: /home/user/Desktop/My Work/RAILS-REACT/refined002/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20230720-34769-z2c0s5.rb extconf.rb
+creating Makefile
+
+current directory: /home/user/Desktop/My Work/RAILS-REACT/refined002/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= clean
+
+current directory: /home/user/Desktop/My Work/RAILS-REACT/refined002/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/user/Desktop/My Work/RAILS-REACT/refined002/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20230720-34769-aazw9e/debug
