@@ -377,13 +377,14 @@ font-size: 20px;
   font-size: 18px;
   transition: 0.3s;
   border-radius: 15px;
-  ;
-}   
-
-.h-100:hover{
+} 
+.card-img-top:hover{
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px grey;
 }
+
+
+
 .cloth_card{
   display: flex;
   justify-content: center;
@@ -743,6 +744,152 @@ font-size: 20px;
   background-color: inherit;
   color: inherit;
 }
+.feature7{
+  width: 550px;
+  margin-left: 20%;
+}
+.yourorder{
+  margin-left: 33%;
+  margin-top: 5%;
+}
+.containerdd{
+  max-width: 500px;
+  margin-left: 18%;
+  margin-bottom: 10%;
+}
+.checkoutcont{
+  display: flex;
+}
+.cardc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 550px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  box-shadow: 16px 16px 32px #c8c8c8,
+        -16px -16px 32px #fefefe;
+  border-radius: 8px;
+}
+.inputBox1 h3{
+  margin-bottom: 15%;
+  margin-top: 2%;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  width: 500px;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+  margin-bottom: 10%;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.ordertr th{
+width: 160%;
+padding-bottom: 2%; 
+
+}
+.orderb td{
+padding-bottom: 4%; 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* HOVER EFFECT FOR SCREENS LARGER THAN 1024*/
 @media (max-width: 1024px) {
@@ -761,31 +908,41 @@ font-size: 20px;
     margin-top: 3%;
   }
   .img1{
-    width: 40vw;
-    height: 10vh;
+    width: 50vw;
+    height: 18vh;
+    margin-top: -43%;
+    margin-left: 20%;
   }
   .name{
     margin-right: -20px;
-    margin-left: -70px;
+    margin-left: -160px;
   }
   .menu ul {
     gap: 10rem;
+    margin-top: 40%;
+    padding-left: -40%;
+    position: relative;
+    z-index: 1;
   }
   .menu ul a{
     color: black;
     text-decoration: none;
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     font-family: 'Moon Dance', cursive;
     font-family: 'Scheherazade New', serif;
     font-family: 'Zen Loop', cursive; 
   }
+  .menu2 ul{
+    margin-top: 57%;
+
+  }
   .menu2 ul a{
     color: black;
     text-decoration: none;
-    margin-right: 30px;
-    font-size: 20px;
+    padding-right: px;
+    font-size: 18px;
     font-weight: 600;  
     font-family: 'Moon Dance', cursive;
     font-family: 'Scheherazade New', serif;
@@ -889,6 +1046,75 @@ font-size: 20px;
   .card-img-top{
     height: 200px;
   }
+  .col{
+    margin-bottom: 8%;
+  }
+  .carticon i{
+    font-size: 14px;
+    margin-top: 190%;
+    margin-left: -60%;
+  }
+  .carticon h6{
+    font-size: 10px;
+    margin-bottom: 5%;
+  }
+  .carticon p{
+    font-size: 8px;
+    margin-left: -60%;
+  }
+  .halua6{
+    width: 374px;
+    height: 300px;
+  }
+  .cloth_card{
+    display: block;
+  }
+  .dname{
+    font-size: 54px;
+    margin-bottom: -10px;
+    font-weight: 600;
+  }
+  .tname{
+    font-size: 24px;
+    margin-bottom: -10px;
+  }
+  .gname{
+    font-size: 25px; 
+    margin-bottom: 10px;
+  }
+  .clothtext{
+    margin-left: 15%;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Scheherazade New', serif;
+    font-family: 'Zen Loop', cursive; 
+  }
+  .cartbtn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #8F9092;
+    color: #000000;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 7px;
+    width: 80px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+    margin-bottom: 10%;
+   }
+   
+   .cartbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   .goback{
+    margin-left: 5%;
+    font-size: 14px;
+   }
 }
 
 

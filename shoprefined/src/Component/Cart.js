@@ -1,10 +1,12 @@
 import React from 'react'
 import { useCart } from 'react-use-cart';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 function Cart() {
 
+  const navigate = useNavigate()
   const [location,setLocation] = useState('')
   const [phoneNumber,setPhoneNumber] = useState('')
   //state variable  to check whether the fields are filled
@@ -19,6 +21,16 @@ function Cart() {
     else{
       alert('Proceeding to checkout...')
       setIsFilled(true);
+
+      //navigate to checkout and pass the following data
+      navigate('/Checkout',{
+        state: {
+          location,
+          phoneNumber,
+          cartData: items,
+          total
+        }
+      })
     }
   }
 
@@ -103,11 +115,12 @@ function Cart() {
       onChange={(e) => setLocation(e.target.value)}
       >
       <option id='selected1' disabled>Select Location</option>
-      <option value="1">Nairobi</option>
-      <option value="2">Ruiru</option>
-      <option value="3">Kiambu</option>
-      <option value="3">Thika</option>
-      <option value="3">Kisumu</option>
+      <option >Select Location</option>
+      <option value="nairobi">Nairobi</option>
+      <option value="ruiru">Ruiru</option>
+      <option value="kiambu">Kiambu</option>
+      <option value="thika">Thika</option>
+      <option value="kisumu">Kisumu</option>
     </select>
 
       <div class="input-container">

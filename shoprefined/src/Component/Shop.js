@@ -100,9 +100,9 @@ function Shop() {
                 <div className='card-body'>
                   <h5 className='card-title'>{product.name}</h5>
                   <p className='card-text'>{product.price}</p>
-                  {/* Use the correct property name (p_price) */}              
+
+             
                </div>
-                
               </div>
             </div>
           ))}

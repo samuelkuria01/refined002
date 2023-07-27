@@ -21,6 +21,7 @@ function NavBar() {
         <div className='menu2'>
             <ul className='about1'>
             <Link  to='/about'>About</Link>
+            
                 </ul>
 
                 <div className='carticon'>

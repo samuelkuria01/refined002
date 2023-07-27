@@ -6,6 +6,7 @@ import Home from './Component/Home';
 import ClothDetail from './Component/ClothDetail';
 import Cart from './Component/Cart';
 import About from './Component/About';
+import Checkout from './Component/Checkout';
 
 
 function App() {
@@ -21,8 +22,7 @@ function App() {
         <Route path='/about' element={<About />} />
         {/* <Route path='/contact' element={<Contact />} /> */}
         <Route path='/cart' element={<Cart />} />
-        <Route />
-        <Route />
+        <Route path='/checkout' element={<Checkout />} />
       </Routes>
 
 
