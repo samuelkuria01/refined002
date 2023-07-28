@@ -1,12 +1,15 @@
 import React, { useState,useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-
+import Loader from './Loader';
+import { useNavigate } from 'react-router-dom';
 
 function Checkout() {
     const [phonenumber, setPhonenumber] = useState('');
     const [useMyLocation, setUseMyLocation] = useState('');
+    const [isLoading, setIsLoading] = useState(false)
   
     // Access the location state using useLocation
+    const navigate = useNavigate()
     const location = useLocation().state?.location;
     const phoneNumber = useLocation().state?.phoneNumber;
     const cartData = useLocation().state?.cartData;
@@ -25,14 +28,25 @@ function Checkout() {
       setUseMyLocation(e.target.value); // Update the location state when the location input is changed
     };
 
-    const handlePlaceOrder = () => {
-        
+    const handlePlaceOrder = (e) => {
+        e.preventDefault()
+        setIsLoading(true)
+
+        //stimulate a loading delay
+        setTimeout(() =>{
+            setIsLoading(false)
+            alert("Your order has been made succeffuly")
+            navigate('/')
+
+        },2000)
     }
 
     
 
   return (
     <div className='checkoutcont'>
+                    {isLoading && <Loader />}
+
       <div class="containerdd">
         <div class="cardc">
             <div class="inputBox1">
@@ -61,9 +75,10 @@ function Checkout() {
                 <span>Town/City</span>
             </div>
             
-
-            <button class="enter" onClick={handlePlaceOrder}>Place Order</button>
-
+            {/* button to handle loading*/}
+            <button className='enter' onClick={handlePlaceOrder} disabled={isLoading}>
+                {isLoading ? 'Placing Order...' : 'Place Order'}
+            </button>
         </div>
     </div>
     <div>
